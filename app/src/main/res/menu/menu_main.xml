@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="myCollect"/>
+        <item
+            android:id="@+id/nav_home2"
+            android:title="myShare"/>
+        <item
+            android:id="@+id/nav_home3"
+            android:title="Setting"/>
+        <item
+            android:id="@+id/nav_home4"
+            android:title="exit"/>
+
+    </group>
+
+    <!--<item android:title="Vresion">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:title="Android"-->
+    <!--android:icon="@mipmap/abc"/>-->
+    <!--<item-->
+    <!--android:title="IOS"-->
+    <!--android:icon="@mipmap/abc"/>-->
+    <!--</menu>-->
+    <!--</item>-->
+</menu>

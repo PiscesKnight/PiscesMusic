@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MusicRadio</string>
+    
+    <!--Login-->
+    <string name="btn_phone">手机号登录</string>
+    <string name="btn_register">注册</string>
+    <string name="visitors_use">游客使用>>></string>
+    <string name="edit_phone">请输入手机号码</string>
+    <string name="edit_pwd">请输入密码</string>
+    <string name="weixin">微信</string>
+    <string name="QQ">QQ</string>
+    <string name="xlwb">新浪微博</string>
+    <string name="wyyx">网易邮箱</string>
+
+    <!--标题-->
+    <string name="title_phoneLoagin">手机号登录</string>
+    <string name="title_phoneRegister">手机号注册</string>
+
+    <!--register-->
+    <string name="edit_setPwd">设置登录密码，不少于6位</string>
+</resources>
