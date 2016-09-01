@@ -16,6 +16,18 @@
     <string name="title_phoneLoagin">手机号登录</string>
     <string name="title_phoneRegister">手机号注册</string>
 
+    <!--抽屉菜单-->
+    <string name="sign_in">签到</string>
+    <string name="member_center">会员中心</string>
+    <string name="timed_shutdown">定时关闭</string>
+    <string name="shazam_encore">听歌识曲</string>
+    <string name="sound_effect_setting">音效设置</string>
+    <string name="music_clock">音乐闹钟</string>
+    <string name="scan">扫一扫</string>
+    <string name="unicom_free_flow">联通免流量</string>
+    <string name="help">帮助中心</string>
+    <string name="feedback">意见反馈</string>
+    
     <!--register-->
     <string name="edit_setPwd">设置登录密码，不少于6位</string>
 </resources>

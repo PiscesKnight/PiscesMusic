@@ -4,27 +4,45 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="myCollect"/>
+
+            android:title="@string/sign_in"/>
         <item
             android:id="@+id/nav_home2"
-            android:title="myShare"/>
+            android:title="@string/member_center"/>
         <item
             android:id="@+id/nav_home3"
-            android:title="Setting"/>
+            android:title="@string/timed_shutdown"/>
         <item
             android:id="@+id/nav_home4"
-            android:title="exit"/>
-
+            android:title="@string/shazam_encore"/>
+        <item
+            android:id="@+id/nav_home5"
+            android:title="@string/sound_effect_setting"/>
+        <item
+            android:id="@+id/nav_home6"
+            android:title="@string/music_clock"/>
+        <item
+            android:id="@+id/nav_home7"
+            android:title="@string/scan"/>
+        <item
+            android:id="@+id/nav_home8"
+            android:title="@string/unicom_free_flow"/>
+        <item
+            android:id="@+id/nav_home9"
+            android:title="@string/help"/>
+        <item
+            android:id="@+id/nav_home10"
+            android:title="@string/feedback"/>
     </group>
 
     <!--<item android:title="Vresion">-->
     <!--<menu>-->
     <!--<item-->
     <!--android:title="Android"-->
-    <!--android:icon="@mipmap/abc"/>-->
+    <!--/>-->
     <!--<item-->
     <!--android:title="IOS"-->
-    <!--android:icon="@mipmap/abc"/>-->
+   <!--/>-->
     <!--</menu>-->
     <!--</item>-->
 </menu>
