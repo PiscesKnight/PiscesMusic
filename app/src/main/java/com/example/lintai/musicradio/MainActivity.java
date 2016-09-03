@@ -1,9 +1,7 @@
 package com.example.lintai.musicradio;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -21,36 +19,46 @@ import com.example.lintai.musicradio.fragment.OmnibusFragment;
 import com.example.lintai.musicradio.fragment.RadioStationFragment;
 import com.example.lintai.musicradio.fragment.RankingFragment;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * Created by LinTai on 2016/8/30.
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    @Bind(R.id.user_btn)
+    ImageView userBtn;
+    @Bind(R.id.tab_layout)
+    TabLayout tabLayout;
+    @Bind(R.id.viewpager)
+    ViewPager viewpager;
+    @Bind(R.id.nv_main_navigation)
+    NavigationView nvMainNavigation;
+    @Bind(R.id.dl_main_drawer)
+    DrawerLayout dlMainDrawer;
 
     private DrawerLayout mDrawerLayout;
     private NavigationView navigationView;//菜单抽屉
     private View headerView;
 
     private ViewPager viewPager;//切换页面
-    private TabLayout tabLayout;
 
-    private ImageView userBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_main);
+        ButterKnife.bind(this);
         initView();
     }
 
-    private void initView(){
+    private void initView() {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.dl_main_drawer);
         navigationView = (NavigationView) findViewById(R.id.nv_main_navigation);
 
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
-
-        userBtn = (ImageView) findViewById(R.id.user_btn);
-
 
         //获取抽屉头文件View
         headerView = navigationView.getHeaderView(0);
@@ -76,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         menuItem.setChecked(true);
                         switch (menuItem.getItemId()) {
                             case R.id.nav_home://我的收藏
-                              //  Intent intent = new Intent(MainActivity.this,MycollectActivity.class);
-                             //   startActivity(intent);
+                                //  Intent intent = new Intent(MainActivity.this,MycollectActivity.class);
+                                //   startActivity(intent);
                                 break;
                             case R.id.nav_home2://我的分享
                                 break;
@@ -114,20 +122,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void setViewPager(ViewPager viewPager) {
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
-        adapter.addFragemnt(new IndexFragment(), "首页");
-        adapter.addFragemnt(new OmnibusFragment(), "精选集");
-        adapter.addFragemnt(new RankingFragment(), "排行榜");
-        adapter.addFragemnt(new RadioStationFragment(), "电台");
+        adapter.addFragemnt(new IndexFragment(), getResources().getString(R.string.index));
+        adapter.addFragemnt(new OmnibusFragment(), getResources().getString(R.string.songs));
+        adapter.addFragemnt(new RadioStationFragment(), getResources().getString(R.string.radio_station));
+        adapter.addFragemnt(new RankingFragment(), getResources().getString(R.string.ranking));
         viewPager.setAdapter(adapter);
 
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.user_btn://用户菜单
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
         }
+    }
+
+    @OnClick(R.id.user_btn)
+    public void onClick() {
     }
 }

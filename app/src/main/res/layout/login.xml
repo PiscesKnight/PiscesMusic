@@ -68,28 +68,28 @@
                         android:layout_weight="1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@mipmap/wx" />
+                        android:src="@mipmap/wx" />
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:background="@mipmap/qq" />
+                        android:src="@mipmap/qq" />
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:background="@mipmap/xl" />
+                        android:src="@mipmap/xl" />
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:background="@mipmap/wy" />
+                        android:src="@mipmap/wy" />
                 </TableRow>
 
                 <TableRow>

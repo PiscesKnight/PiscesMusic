@@ -30,4 +30,14 @@
     
     <!--register-->
     <string name="edit_setPwd">设置登录密码，不少于6位</string>
+    
+    <!--首页-->
+    <string name="today_song">今日推荐</string>
+    <string name="original_music">原创音乐</string>
+    <string name="special_topic">音乐专题</string>
+    <string name="index">首页</string>
+    <string name="songs">歌单</string>
+    <string name="ranking">排行榜</string>
+    <string name="radio_station">电台</string>
+    
 </resources>

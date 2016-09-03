@@ -7,9 +7,15 @@
 
     <!--主体颜色-->
     <color name="red">#b00a0a</color>
+
+    <!--主题字体-->
+    <color name="black">#000</color>
     
     <!--顶部标题-->
     <color name="white">#FFFFFF</color>
+
+    <!--分割线颜色-->
+    <color name="cut_off_rule">#F0F0F0</color>
 
     <!--透明设置-->
     <!--//color.xml的#5000000前两位是透明的效果参数从00-99（透明-不怎么透明），后6位是颜色的设置-->
