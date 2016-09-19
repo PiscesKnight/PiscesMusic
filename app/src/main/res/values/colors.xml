@@ -15,7 +15,7 @@
     <color name="white">#FFFFFF</color>
 
     <!--分割线颜色-->
-    <color name="cut_off_rule">#F0F0F0</color>
+    <color name="cut_off_rule">#ccc</color>
 
     <!--透明设置-->
     <!--//color.xml的#5000000前两位是透明的效果参数从00-99（透明-不怎么透明），后6位是颜色的设置-->

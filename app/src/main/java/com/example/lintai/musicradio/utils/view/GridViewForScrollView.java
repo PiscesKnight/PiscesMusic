@@ -3,23 +3,20 @@ package com.example.lintai.musicradio.utils.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.GridView;
-import android.widget.ListView;
 
 /**
- * Created by 泰子 on 2015/11/4.
+ * Created by LinTai on 2016/9/4.
  */
-public class ListViewForScrollView extends ListView{
-
-
-    public ListViewForScrollView(Context context) {
+public class GridViewForScrollView extends GridView {
+    public GridViewForScrollView(Context context) {
         super(context);
     }
 
-    public ListViewForScrollView(Context context, AttributeSet attrs) {
+    public GridViewForScrollView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public ListViewForScrollView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public GridViewForScrollView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

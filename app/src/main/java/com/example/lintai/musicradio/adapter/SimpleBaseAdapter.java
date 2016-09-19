@@ -197,19 +197,7 @@ public abstract class SimpleBaseAdapter<T> extends BaseAdapter {
             }
             return this;
         }
-        public ViewHolder setImageURL2(int viewId, String url) {
-            ImageView imageView = getView(viewId);
-            if (!url.equals("")) {
-                Picasso.with(mContext)
-                        .load(url)
-                        .placeholder(R.mipmap.aaa)
-                        .error(R.mipmap.aaa)
-                        .centerCrop()
-                        .resize(100,130)
-                        .into(imageView);
-            }
-            return this;
-        }
+
 
     }
 }

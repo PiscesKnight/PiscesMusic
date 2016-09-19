@@ -1,8 +1,9 @@
-package com.example.lintai.musicradio.fragment;
+package com.example.lintai.musicradio.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,4 +33,19 @@ public class IndexFragment extends Fragment {
         banner.setImages(images);
         banner.setDelayTime(3000);
     }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d("IndexFragment","onCreate");
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.d("IndexFragment","onResume");
+
+    }
+
+
 }

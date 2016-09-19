@@ -5,37 +5,27 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/omnibus_img"
+        android:id="@+id/radiostation_img"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:background="#000"
         android:scaleType="centerCrop" />
 
     <TextView
-        android:id="@+id/omnibus_play_count"
+        android:id="@+id/radiostation_play_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginRight="3dp"
         android:layout_marginTop="3dp"
-        android:text="32万"
+        android:text="当前热度：1.8万"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
-    <TextView
-        android:id="@+id/omnibus_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/omnibus_img"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="5dp"
-        android:text="UserName"
-        android:textColor="@color/white"
-        android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/omnibus_name"
+        android:id="@+id/radiostation_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

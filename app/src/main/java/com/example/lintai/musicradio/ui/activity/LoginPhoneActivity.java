@@ -1,10 +1,12 @@
-package com.example.lintai.musicradio;
+package com.example.lintai.musicradio.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.lintai.musicradio.R;
 
 /**
  * Created by LinTai on 2016/8/29.

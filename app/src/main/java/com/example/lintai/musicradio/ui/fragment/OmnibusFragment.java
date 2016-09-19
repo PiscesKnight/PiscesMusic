@@ -1,4 +1,4 @@
-package com.example.lintai.musicradio.fragment;
+package com.example.lintai.musicradio.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -44,7 +44,7 @@ public class OmnibusFragment extends Fragment {
         data = new ArrayList<>();
 
         OmnibusEntity.DataBean.CollectsBean entity = new OmnibusEntity.DataBean.CollectsBean();
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i < 10; i++) {
             entity.setCollect_logo("http://pic.xiami.net/images/collect/591/91/8575591_1322359739.jpg@1e_1c_0i_1o_100Q_324w_324h.webp");
             entity.setCollect_name("50首让人安静的钢琴曲");
             entity.setPlay_count(getTenThousand(7721459));

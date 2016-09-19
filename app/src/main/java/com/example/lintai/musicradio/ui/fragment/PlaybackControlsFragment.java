@@ -1,4 +1,4 @@
-package com.example.lintai.musicradio.fragment;
+package com.example.lintai.musicradio.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

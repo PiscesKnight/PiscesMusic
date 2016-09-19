@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mymusic_img"
+        android:layout_width="80dp"
+        android:background="@mipmap/aaa"
+        android:layout_height="80dp" />
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+       >
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/mymusic_title"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近播放的歌曲"/>
+        <TextView
+            android:id="@+id/mymusic_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mymusic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40首"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</LinearLayout>
