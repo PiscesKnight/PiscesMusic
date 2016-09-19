@@ -13,6 +13,7 @@ import com.example.lintai.musicradio.R;
 import com.example.lintai.musicradio.adapter.DemoAdapter;
 import com.example.lintai.musicradio.adapter.FindAdapter;
 import com.example.lintai.musicradio.entity.FindEntity;
+import com.example.lintai.musicradio.utils.view.util.FixListViewHeight;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,28 +71,29 @@ public class FindFragment extends Fragment {
         data.add(listBean3);
         data.add(listBean4);
         data.add(listBean5);
-        layoutId = new ArrayList<>();
-        itemType = new ArrayList<>();
-        dataGetType = new ArrayList<>();
-        layoutId.add(R.layout.find_listview_1);
-        layoutId.add(R.layout.find_listview_2);
-        layoutId.add(R.layout.find_listview_3);
-        layoutId.add(R.layout.find_listview_4);
-
-        itemType.add("6_normal");
-        itemType.add("9_normal");
-        itemType.add("8_normal");
-        itemType.add("5_normal");
-
-        for (int i = 0;i<data.size();i++) {
-            dataGetType.add(data.get(i).getType());
-        }
+//        layoutId = new ArrayList<>();
+//        itemType = new ArrayList<>();
+//        dataGetType = new ArrayList<>();
+//        layoutId.add(R.layout.find_listview_1);
+//        layoutId.add(R.layout.find_listview_2);
+//        layoutId.add(R.layout.find_listview_3);
+//        layoutId.add(R.layout.find_listview_4);
+//
+//        itemType.add("6_normal");
+//        itemType.add("9_normal");
+//        itemType.add("8_normal");
+//        itemType.add("5_normal");
+//
+//        for (int i = 0;i<data.size();i++) {
+//            dataGetType.add(data.get(i).getType());
+//        }
 
         adapter = new FindAdapter(getActivity(),data);
         findListview.setAdapter(adapter);
 
 
-        fixListViewHeight(findListview);
+        FixListViewHeight.fixListViewHeight(findListview);
+        findListview.setFocusable(false);
     }
 
     @Override
@@ -100,29 +102,4 @@ public class FindFragment extends Fragment {
         ButterKnife.unbind(this);
     }
 
-    /**
-     * 重新计算Listview的每一个Item高度
-     * @param listView
-     */
-    public void fixListViewHeight(ListView listView) {
-        // 如果没有设置数据适配器，则ListView没有子项，返回。
-        ListAdapter listAdapter = listView.getAdapter();
-        int totalHeight = 0;
-        if (listAdapter == null) {
-            return;
-        }
-        for (int index = 0, len = listAdapter.getCount(); index < len; index++) {
-            View listViewItem = listAdapter.getView(index , null, listView);
-            // 计算子项View 的宽高
-            listViewItem.measure(0, 0);
-            // 计算所有子项的高度和
-            totalHeight += listViewItem.getMeasuredHeight();
-        }
-
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-        // listView.getDividerHeight()获取子项间分隔符的高度
-        // params.height设置ListView完全显示需要的高度
-        params.height = totalHeight+ (listView.getDividerHeight() * (listAdapter.getCount() - 1));
-        listView.setLayoutParams(params);
-    }
 }

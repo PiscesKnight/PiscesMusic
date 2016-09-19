@@ -54,6 +54,7 @@ public class RadioStationFragment extends Fragment {
 
         adapter = new RadioStationAdapter(getActivity(),R.layout.radiostation_gridview_item,data);
         radioGridview.setAdapter(adapter);
+        radioGridview.setFocusable(false);
     }
 
     @Override

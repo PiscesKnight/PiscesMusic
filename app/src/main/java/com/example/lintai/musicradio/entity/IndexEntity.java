@@ -1,5 +1,6 @@
 package com.example.lintai.musicradio.entity;
 
+import java.net.URL;
 import java.util.List;
 
 /**
@@ -87,6 +88,11 @@ public class IndexEntity {
             private String type;
             private int layout;
             private List<?> banner;
+            private List<?> radios;
+            private List<?> new_music;
+
+
+            private List<SongsBean> songs;
 
             public String getType() {
                 return type;
@@ -110,6 +116,89 @@ public class IndexEntity {
 
             public void setBanner(List<?> banner) {
                 this.banner = banner;
+            }
+
+            public List<SongsBean> getSongs() {
+                return songs;
+            }
+
+            public void setSongs(List<SongsBean> songs) {
+                this.songs = songs;
+            }
+
+            public static class SongsBean {
+                private int song_id;
+                private String song_name;
+                private String album_logo;
+                private String artist_name;
+                private String singers;
+                private String mv_id;
+                private int song_status;
+                private URL url;
+
+                public int getSong_id() {
+                    return song_id;
+                }
+
+                public void setSong_id(int song_id) {
+                    this.song_id = song_id;
+                }
+
+                public String getSong_name() {
+                    return song_name;
+                }
+
+                public void setSong_name(String song_name) {
+                    this.song_name = song_name;
+                }
+
+                public String getAlbum_logo() {
+                    return album_logo;
+                }
+
+                public void setAlbum_logo(String album_logo) {
+                    this.album_logo = album_logo;
+                }
+
+                public String getArtist_name() {
+                    return artist_name;
+                }
+
+                public void setArtist_name(String artist_name) {
+                    this.artist_name = artist_name;
+                }
+
+                public String getSingers() {
+                    return singers;
+                }
+
+                public void setSingers(String singers) {
+                    this.singers = singers;
+                }
+
+                public String getMv_id() {
+                    return mv_id;
+                }
+
+                public void setMv_id(String mv_id) {
+                    this.mv_id = mv_id;
+                }
+
+                public int getSong_status() {
+                    return song_status;
+                }
+
+                public void setSong_status(int song_status) {
+                    this.song_status = song_status;
+                }
+
+                public URL getUrl() {
+                    return url;
+                }
+
+                public void setUrl(URL url) {
+                    this.url = url;
+                }
             }
         }
     }

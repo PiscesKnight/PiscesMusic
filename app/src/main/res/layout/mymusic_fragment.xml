@@ -29,7 +29,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2.1dp"
+                android:layout_height="0.1dp"
                 android:background="@color/cut_off_rule" />
 
             <TableRow android:layout_margin="15dp">
@@ -49,7 +49,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2.1dp"
+                android:layout_height="0.1dp"
                 android:background="@color/cut_off_rule" />
 
             <TableRow android:layout_margin="15dp">
@@ -67,16 +67,16 @@
                     android:text="下载管理（3）" />
             </TableRow>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2.1dp"
-                android:background="@color/cut_off_rule" />
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="@color/cut_off_rule" />-->
         </TableLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ccc"
+            android:background="@color/gray"
             android:orientation="horizontal">
 
             <TextView

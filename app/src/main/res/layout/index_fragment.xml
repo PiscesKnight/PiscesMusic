@@ -13,7 +13,7 @@
         <com.youth.banner.Banner
             android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="180dp" />
 
         <!--三个子菜单-->
         <LinearLayout
@@ -26,7 +26,7 @@
                 android:layout_height="50dp"
 
                 android:layout_weight="1"
-                android:src="@mipmap/aaa" />
+                android:src="@mipmap/tuijian" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -35,16 +35,17 @@
                 android:src="@mipmap/aaa" />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:src="@mipmap/aaa" />
+                android:src="@mipmap/special_topic" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -74,14 +75,12 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.1dp"
-            android:background="#000" />
+            android:layout_height="2.5dp"
+            android:background="@color/gray" />
 
         <ListView
             android:id="@+id/index_listview"
             android:layout_width="fill_parent"
-            android:divider="@color/cut_off_rule"
-            android:dividerHeight="5dp"
             android:layout_height="fill_parent" />
 
     </LinearLayout>

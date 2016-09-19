@@ -60,6 +60,7 @@ public class MyMusicFragment extends Fragment {
 
         adapter = new MyMusicAdapter(getActivity(), R.layout.mymusic_listview_item, data);
         mymusicListview.setAdapter(adapter);
+        mymusicListview.setFocusable(false);
     }
 
     @Override
