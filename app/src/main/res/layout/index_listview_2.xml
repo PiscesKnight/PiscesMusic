@@ -62,7 +62,7 @@
                 />
         </TableRow>
 
-        <TableRow android:layout_marginTop="5dp">
+        <TableRow android:layout_marginTop="-5dp">
 
             <TextView
                 android:layout_width="125dp"
@@ -71,6 +71,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:lines="2"
+                android:ellipsize="end"
                 android:text="日常循环 欧美魔性骚曲 Vol.3" />
 
             <TextView
@@ -79,6 +81,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:lines="2"
+                android:ellipsize="end"
                 android:text="中文说唱（潜力股）" />
 
             <TextView
@@ -87,6 +91,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:lines="2"
+                android:ellipsize="end"
                 android:text="世界上的那些深情" />
         </TableRow>
 
@@ -115,7 +121,7 @@
                 android:src="@mipmap/omnibus6" />
         </TableRow>
 
-        <TableRow android:layout_marginTop="5dp">
+        <TableRow android:layout_marginTop="-5dp">
 
             <TextView
                 android:layout_width="125dp"
@@ -123,6 +129,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
+                android:lines="2"
+                android:ellipsize="end"
                 android:gravity="center"
                 android:text="沉醉在这样的夜晚" />
 
@@ -132,6 +140,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:lines="2"
+                android:ellipsize="end"
                 android:text="世界上的那些深情" />
 
             <TextView
@@ -140,6 +150,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:lines="2"
+                android:ellipsize="end"
                 android:text="姐心妹情，高唱入雲（女女對唱）" />
         </TableRow>
     </TableLayout>

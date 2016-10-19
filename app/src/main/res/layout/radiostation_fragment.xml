@@ -45,12 +45,19 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:orientation="horizontal"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-
+            android:gravity="center"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/red"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
                 android:text="全部" />
 
             <View
@@ -58,10 +65,22 @@
                 android:layout_height="1dp"
                 android:layout_weight="1" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="选择分类" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="90dp"
+                android:background="@drawable/omnibus_button"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/classify"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所有分类"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
         </LinearLayout>
 
         <com.example.lintai.musicradio.utils.view.GridViewForScrollView

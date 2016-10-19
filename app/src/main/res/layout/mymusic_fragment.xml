@@ -17,7 +17,8 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="#000" />
+                    android:background="@mipmap/bdyy"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -37,7 +38,27 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="#000" />
+                    android:background="@mipmap/zjbf"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="最近播放（3）" />
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/cut_off_rule" />
+
+            <TableRow android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/wdgs" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -57,7 +78,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="#000" />
+                    android:background="@mipmap/xzgl" />
 
                 <TextView
                     android:layout_width="match_parent"

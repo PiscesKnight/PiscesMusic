@@ -10,4 +10,10 @@
     <dimen name="title_size">18sp</dimen>
     <dimen name="line_marginleft">60dp</dimen>
     <dimen name="line_height">2.5dp</dimen>
+
+    <dimen name="img_left_width">35dp</dimen>//图标大小
+    <dimen name="img_left_height">35dp</dimen>
+
+    <dimen name="img_right_width">40dp</dimen>//箭头大小
+    <dimen name="img_right_height">20dp</dimen>
 </resources>
