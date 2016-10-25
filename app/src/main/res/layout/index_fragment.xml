@@ -22,22 +22,27 @@
             android:layout_marginTop="15dp">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-
+                android:layout_width="@dimen/menu_img_width"
+                android:layout_height="@dimen/menu_img_height"
                 android:layout_weight="1"
+                android:onClick="onClick"
+                android:id="@+id/index_recommendToday_btn"
                 android:src="@mipmap/tuijian" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/menu_img_width"
+                android:layout_height="@dimen/menu_img_height"
                 android:layout_weight="1"
-                android:src="@mipmap/aaa" />
+                android:onClick="onClick"
+                android:src="@mipmap/aaa"
+                android:id="@+id/index_original_btn" />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/menu_img_width"
+                android:layout_height="@dimen/menu_img_height"
                 android:layout_weight="1"
+                android:onClick="onClick"
+                android:id="@+id/index_musicSpecial_btn"
                 android:src="@mipmap/special_topic" />
         </LinearLayout>
 

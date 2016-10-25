@@ -2,6 +2,7 @@ package com.example.lintai.musicradio.ui.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -70,46 +71,46 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 //选中
-                switch (tab.getPosition()){
+                switch (tab.getPosition()) {
                     case 0:
-                        tab.setText(setTabIcon(R.mipmap.index1,false));
+                        tab.setText(setTabIcon(R.mipmap.index1, false));
                         break;
                     case 1:
-                        tab.setText(setTabIcon(R.mipmap.music1,false));
+                        tab.setText(setTabIcon(R.mipmap.music1, false));
                         break;
                     case 2:
-                        tab.setText(setTabIcon(R.mipmap.user1,false));
+                        tab.setText(setTabIcon(R.mipmap.user1, false));
                 }
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                    //未选中
-                switch (tab.getPosition()){
+                //未选中
+                switch (tab.getPosition()) {
                     case 0:
-                        tab.setText(setTabIcon(R.mipmap.index,true));
+                        tab.setText(setTabIcon(R.mipmap.index, true));
                         break;
                     case 1:
-                        tab.setText(setTabIcon(R.mipmap.music,true));
+                        tab.setText(setTabIcon(R.mipmap.music, true));
                         break;
                     case 2:
-                        tab.setText(setTabIcon(R.mipmap.user,true));
+                        tab.setText(setTabIcon(R.mipmap.user, true));
                         break;
                 }
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-                    //再次选中
-                switch (tab.getPosition()){
+                //再次选中
+                switch (tab.getPosition()) {
                     case 0:
-                        tab.setText(setTabIcon(R.mipmap.index1,false));
+                        tab.setText(setTabIcon(R.mipmap.index1, false));
                         break;
                     case 1:
-                        tab.setText(setTabIcon(R.mipmap.music1,false));
+                        tab.setText(setTabIcon(R.mipmap.music1, false));
                         break;
                     case 2:
-                        tab.setText(setTabIcon(R.mipmap.user1,false));
+                        tab.setText(setTabIcon(R.mipmap.user1, false));
                         break;
                 }
             }
@@ -120,20 +121,21 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 设置Tab的图片
+     *
      * @param resId
-     * @param isAplpha  是否透明
+     * @param isAplpha 是否透明
      * @return
      */
-    private CharSequence setTabIcon(int resId,boolean isAplpha){
+    private CharSequence setTabIcon(int resId, boolean isAplpha) {
         Drawable image = getResources().getDrawable(resId);
-        if(isAplpha) {
-            image.setAlpha(50);
+        if (isAplpha) {
+            image.setAlpha(80);
         }
-        image.setBounds(0, 0, (int)(image.getIntrinsicWidth()/2.5), (int)(image.getIntrinsicHeight()/2.5));
+        image.setBounds(0, 0, (int) (image.getIntrinsicWidth() / 2.5), (int) (image.getIntrinsicHeight() / 2.5));
         SpannableString sb = new SpannableString(" ");
         ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
         sb.setSpan(imageSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-       return sb;
+        return sb;
     }
 
 
@@ -186,20 +188,24 @@ public class MainActivity extends AppCompatActivity {
      * @param viewPager
      */
     private void setViewPager(ViewPager viewPager) {
-        FragmentAdapter adapter = new FragmentAdapter(getApplicationContext(),getSupportFragmentManager());
-        adapter.addIconFragment(new MusicIndexFragment(),R.mipmap.index);
+        FragmentAdapter adapter = new FragmentAdapter(getApplicationContext(), getSupportFragmentManager());
+        adapter.addIconFragment(new MusicIndexFragment(), R.mipmap.index);
         adapter.addIconFragment(new MyMusicFragment(), R.mipmap.music);
-        adapter.addIconFragment(new FindFragment(),R.mipmap.user);
+        adapter.addIconFragment(new FindFragment(), R.mipmap.user);
         viewPager.setAdapter(adapter);
 
     }
 
-
-    //    对其他按钮有影响
-    @OnClick(R.id.user_btn)
-    public void onClick() {
-        dlMainDrawer.openDrawer(GravityCompat.START);
+    @OnClick({R.id.user_btn, R.id.music_search})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.user_btn:
+                dlMainDrawer.openDrawer(GravityCompat.START);
+                break;
+            case R.id.music_search:
+                Intent intent = new Intent(this, SearchActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
-
-
 }

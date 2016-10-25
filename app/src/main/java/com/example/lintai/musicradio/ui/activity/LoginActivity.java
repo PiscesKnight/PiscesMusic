@@ -30,8 +30,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-
-
     @OnClick({R.id.btn_phone, R.id.btn_register, R.id.tourist_trial})
     public void onClick(View view) {
         Intent intent = null;

@@ -61,9 +61,8 @@ public class FragmentAdapter extends FragmentStatePagerAdapter {
         if (mFragmentIcon.size() > 0) {
             Drawable image = context.getResources().getDrawable(mFragmentIcon.get(position));
             if (position != 0) {//第一个不透明
-                image.setAlpha(50);
+                image.setAlpha(80);
             }
-
             image.setBounds(0, 0, (int) (image.getIntrinsicWidth() / 2.5), (int) (image.getIntrinsicHeight() / 2.5));
             SpannableString sb = new SpannableString(" ");
             ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
