@@ -57,7 +57,7 @@ public class TodayRecommendActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
-        setContentView(R.layout.toolbar);
+        setContentView(R.layout.todayrecommend);
         ButterKnife.bind(this);
         init();
     }

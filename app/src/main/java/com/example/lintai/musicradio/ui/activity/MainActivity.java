@@ -20,6 +20,7 @@ import android.widget.ImageView;
 
 import com.example.lintai.musicradio.R;
 import com.example.lintai.musicradio.adapter.FragmentAdapter;
+import com.example.lintai.musicradio.base.BaseActivity;
 import com.example.lintai.musicradio.ui.fragment.FindFragment;
 import com.example.lintai.musicradio.ui.fragment.MusicIndexFragment;
 import com.example.lintai.musicradio.ui.fragment.MyMusicFragment;
@@ -31,7 +32,7 @@ import butterknife.OnClick;
 /**
  * Created by LinTai on 2016/9/6.
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Bind(R.id.user_btn)
     ImageView userBtn;
